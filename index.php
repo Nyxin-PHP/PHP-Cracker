@@ -300,7 +300,7 @@
           © Nyxin Projects - All rights reserved.
         </p>
         <div class="social-icons">
-          <a href="#" class="mx-2"><i class="bi bi-github" style="font-size: 5vw;color: cyan;"></i></a>
+          <a href="https://github.com/Nyxin-PHP/PHP-Cracker" class="mx-2"><i class="bi bi-github" style="font-size: 5vw;color: cyan;"></i></a>
         </div>
       </div>
     </footer>
