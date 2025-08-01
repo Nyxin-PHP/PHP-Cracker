@@ -1,0 +1,28 @@
+.logo {
+  font-family: "Iceberg", sans-serif;
+  font-size: 5vw;
+  color: #078485;
+}
+.intro {
+  font-family: "Zen Tokyo Zoo", system-ui;
+  font-size: 8vw;
+  color: #3BACDB;
+}
+.iceland {
+  font-family: "Iceland", sans-serif;
+  font-weight: 400;
+  font-size: 4.5vw;
+  text-align: center;
+}
+
+.calm {
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.custom-footer {
+  font-family: "Rationale", sans-serif;
+  color: #078485;
+  font-size: 4vw;
+}

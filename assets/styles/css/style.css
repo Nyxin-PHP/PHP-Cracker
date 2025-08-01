@@ -1,0 +1,321 @@
+[data-bs-theme="dark"] {
+  --bs-body-bg: #000f1f;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%232f89af' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  width: 5vw;
+  height: 5hw;
+}
+body {
+  margin: 0;
+  transition: background 3s ease;
+  animation: backgroundChange 2s forwards;
+}
+@keyframes backgroundChange {
+  0% {
+    background: #4d4d4d;
+  }
+  50% {
+    background: #2b2b2b;
+  }
+  100% {
+    background: #000f1f;
+  }
+}
+:root {
+  --main-size: 60vw;
+  --circle-size: 6vw;
+}
+.main {
+  width: var(--main-size);
+  height: var(--main-size);
+  border: 1px solid #078485;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #88F7FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 3vw;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: cyan;
+}
+.circle {
+  width: var(--circle-size);
+  height: var(--circle-size);
+  background: #078485;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% 50%;
+  animation: circle 6s linear infinite;
+}
+@keyframes circle {
+  0% {
+    transform: rotate(0deg)
+    translate(
+    calc(var(--main-size) / 2),
+    0
+    )
+    rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg)
+    translate(
+    calc(var(--main-size) / 2),
+    0
+    )
+    rotate(-360deg);
+  }
+}
+.scan-line {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, rgba(0, 255, 255, 0.8), transparent);
+  top: 0;
+  animation: scan 3s linear infinite;
+  filter: blur(1px);
+  z-index: 9999;
+}
+@keyframes scan {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+.divider {
+  margin-top: 3vw;
+  margin-right: 0;
+  margin-bottom: 3vw;
+  margin-left: 0;
+  border: none;
+  height: 2px;
+  width: 80%;
+  background-color: transparent;
+}
+
+.btn-check:checked + .modern::after {
+  content: "🔒️ Show Passwords: ON";
+}
+
+.btn-check + .modern::after {
+  content: "🔓 Show Passwords: OFF";
+}
+
+.btn-check:checked + .modern {
+  background: linear-gradient(135deg, #, #);
+  font-family: "Iceland", sans-serif;
+  font-size: 4vw !important;
+  color: #88F7FF;
+  border: 1px solid #88F7FF !important;
+  border-radius: 0.5rem;
+  box-shadow: 0 6px 20px 0 #88F7FF;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.4s ease-in-out;
+  padding: 1rem 2rem;
+  opacity: 1;
+}
+
+.modern {
+  background: rgba(255, 255, 255, 0.05);
+  font-family: "Iceland", sans-serif;
+  font-size: 3.2vw;
+  color: #ffffff;
+  border: 0.25px solid #88F7FF !important;
+  border-radius: 2rem;
+  box-shadow: 0 4px 11px 0 #ebf6fb;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  padding: 1rem 2rem;
+  opacity: 0.6;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+button.start {
+  width: 80vw;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  background: linear-gradient(135deg, #000f1f, #192635);
+  font-family: "Zen Dots", sans-serif;
+  font-size: 3.5vw;
+  font-weight: 400;
+  font-style: normal;
+  color: #88F7FF;
+  border: 1px solid #88F7FF !important;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px 0 #88F7FF;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.4s ease-in-out;
+  padding: 2rem 2rem;
+  opacity: 1;
+}
+
+button.start:hover {
+  background: rgba(255, 255, 255, 0.05);
+  font-family: "Iceland", sans-serif;
+  font-size: 3.2vw;
+  color: #ffffff;
+  border: 0.25px solid #66A6FE !important;
+  border-radius: 2rem;
+  box-shadow: 0 4px 11px 0 #ebf6fb;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  padding: 1rem 2rem;
+  opacity: 0.6;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrap {
+  width: 80vw;
+  aspect-ratio: auto 3 / 1;
+  background-color: #000f1f;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background: linear-gradient(135deg, #, #);
+  flex: 1;
+  width: 50%;
+  height: 90%;
+  background-color: #000f1f;
+  border: 1px solid #92e6f1;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 20px 0 #88F7FF;
+  margin: 0.3rem;
+}
+
+.box .bi {
+  font-size: 3vw;
+  color: #92e6f1;
+  text-shadow: 0 0 10px #92e6f1, 0 0 20px #92e6f1;
+  padding-right: 5px;
+}
+
+.centered {
+  display: grid;
+  place-items: center;
+  margin: 0;
+}
+
+.btn-t {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  font-family: "Stalinist One", sans-serif;
+  font-size: 2.5vw;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.btn-t:hover {
+  transform: scale(1.05);
+}
+
+.collapse-content {
+  margin-top: 15px;
+  padding: 20px;
+  background:;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  animation: fadeIn 0.3s ease;
+  text-align: left;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.collapse-content h5 {
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3vw;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: white;
+}
+
+.collapse-content p {
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #333;
+  font-size: 2.8vw;
+  color: white;
+}
+
+button.save {
+  width: 45vw;
+  height: auto;
+  background: transparent;
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 3vw;
+  margin: 0 auto;
+  display: block;
+  border: 1px solid #92e6f1;
+  border-radius:0.2rem;
+  color: #92e6f1;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px #92e6f1;
+  letter-spacing: 0.5px;
+  
+}
+
+button.save:hover {
+  background: #078485;
+  transform: scale(1.02);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+}
+
+button.save:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+button.save i {
+  margin-right: 8px;
+  font-size: 3vw;
+  vertical-align: middle;
+}
+
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
