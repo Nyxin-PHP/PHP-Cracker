@@ -1,0 +1,107 @@
+# 📄 Nyxin PHP Brute Force
+
+**Web Interface - User Guide **
+
+## 🔒 Show/Hide Passwords Button
+This button allows you to toggle the visibility of the passwords being tested during the brute-force process.
+
+## ⏱️ Delay Range Slider
+Set the time delay between each password attempt. The delay is in seconds (fractions allowed) and is used to control the attack speed and avoid detection or server lockouts.
+
+---
+
+## ⚙️ Password Configuration Section
+
+### 1️⃣ Choose Attack Mode:
+You can choose between two methods for generating passwords:
+
+### A) System-Generated Passwords:
+There are 16 options for generating passwords based on different character combinations:
+
+1. Numbers only
+2. Lowercase letters only
+3. Uppercase letters only
+4. Special characters only
+5. Numbers + lowercase letters
+6. Numbers + uppercase letters
+7. Numbers + letters + special characters
+8. Lowercase + uppercase letters
+9. Lowercase letters + special characters
+10. Uppercase letters + special characters
+11. Numbers + lowercase + uppercase letters
+12. Numbers + lowercase letters + special characters
+13. Numbers + uppercase letters + special characters
+14. Lowercase + uppercase letters + special characters
+15. Numbers + lowercase + uppercase letters + special characters
+16. Custom character set
+
+💡 **Unique Feature**:
+Option 16 allows you to input your own custom set of characters—letters, numbers, symbols, or even characters from any supported language (e.g. Chinese, Arabic, etc.), as long as they are supported by the system's character encoding (Unicode).
+
+---
+
+### B) Dictionary-Based Attack:
+Use a pre-made list of passwords.
+To use this option, place your dictionary file in the following directory and name it:
+
+---
+
+### 📏 Password Length Settings:
+- Minimum password length
+- Maximum password length
+
+Make sure these values align with the target system's password rules.
+
+---
+
+### 🔁 Starting Point:
+Use this setting to resume the attack from a specific starting point within the generated password space.
+
+⚠️ Important: The starting point must be valid and consistent with the chosen password format and length. Any mismatch will result in the failure of the attack.
+
+---
+
+### 🚫 Ignore User Abort:
+When enabled, the attack will continue running even if the user closes the browser or interface.
+
+⚠️ **Warning**: This is a powerful feature. If the password list is large, the process will keep running in the background until it finishes or the device is manually shut down.
+
+---
+
+### 💾 Save Last Tried Password:
+This option saves the last tested password in real time, which can be useful for resuming the process later.
+
+---
+
+### 🔄 Resume from Last Tried Password:
+If enabled, the script will automatically resume from where it left off, based on the last saved password. This is useful in case of crashes or interruptions.
+
+---
+
+## 🔘 Save Button
+
+The **Save** button is used to store your selected configuration options into the Configuration.php file.
+
+* **Important Note:**
+If you do not press the **Save** button after making changes, your settings will **not** be saved.
+Make sure to click **Save** before starting the script to ensure it uses your customized options.
+
+---
+
+## ▶️ Start Button
+
+The **Start** button launches the main operation of the script (e.g., password brute force/cracking).
+When clicked, it executes an **infinite loop function** that continuously performs the attack process.
+
+### ⚠️ Warning:
+
+* Most PHP servers use a **single-threaded** execution model, meaning background tasks or true parallel processing are not supported.
+* Once the infinite loop starts, **it cannot be stopped via the web interface**.
+* **The only way to stop execution** is by manually type STOP in a file named:
+
+```
+stop.flag
+```
+---
+
+End of File.
