@@ -1,0 +1,54 @@
+======================================================
+⚠️  WARNING: Read Before Using PHP Cracker Tool
+======================================================
+
+This tool is intended **strictly for local CLI use**. Running it in a production or web environment can result in serious performance, security, and legal issues.
+
+------------------------------------------------------
+🚫 DO NOT use this tool on third-party systems without explicit permission.
+------------------------------------------------------
+
+KEY WARNINGS:
+
+1. This script may perform:
+   - Infinite loops
+   - Long-running processes
+   - Heavy brute-force operations
+   - High CPU and memory usage
+
+2. There are **no built-in time limits** or safeguards against overuse. Misuse can:
+   - Overload your system
+   - Crash target servers
+   - Cause data loss or corruption
+
+3. Running in a browser or public-facing server is **strongly discouraged**.
+   - Not safe for shared hosting
+   - Not suitable for web-accessible environments
+
+4. Some features may **not function outside CLI**, such as:
+   - Caching last attempted password
+   - Resuming from previous sessions
+   - Safe loop interruption
+
+------------------------------------------------------
+🛑 SAFE USAGE INSTRUCTIONS:
+
+- Use only in a **controlled CLI environment**
+- To stop an infinite loop, create a file named `stop.flag` in the working directory
+- Monitor system resource usage at all times
+- NEVER expose this tool via HTTP/Apache/Nginx
+
+------------------------------------------------------
+✔️ INTENDED USE CASES:
+
+- Penetration testing with permission
+- Local password recovery
+- Security research & audit
+- Educational purposes
+
+------------------------------------------------------
+⚠️ DISCLAIMER:
+
+Unauthorized use is illegal in many countries. You are fully responsible for any misuse of this tool. The authors accept **no liability** for damages, misuse, or violations.
+
+======================================================

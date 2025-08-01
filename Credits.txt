@@ -1,0 +1,27 @@
+## 🙏 Credits
+
+Nyxin was built by [M.A.] with custom PHP development and original logic.
+
+The following tools and services provided auxiliary support:
+
+### 🤖 AI Assistance
+
+- **ChatGPT (OpenAI)** – Assisted with documentation editing, feature planning, and occasional code review.
+- **Gemini (Google)** – Provided one-time support for a JavaScript snippet (`streamer.js`) used to handle live output streaming.
+
+### 🧱 Front-End Libraries
+
+- **Bootstrap v5.3.7** – For styling and responsive layout.  
+  🔗 https://getbootstrap.com/
+
+- **Google Fonts** – For font customization and UI enhancement.  
+  🔗 https://fonts.google.com/
+
+### ⚙️ Development Tools
+
+- VS Code / PHPStorm – For coding and debugging.
+- GitHub – For version control and open-source publishing.
+
+---
+
+> 💬 Want to contribute or be listed here? Submit a pull request or open an issue.

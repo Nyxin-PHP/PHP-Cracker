@@ -1,0 +1,96 @@
+## ⚙️ Advanced Usage - For PHP Developers Only
+
+This tool is designed for advanced PHP developers and security researchers. It is **not intended for casual or unauthorized use**. The following information describes the full technical capabilities of the tool for legitimate, ethical purposes such as testing, research, and penetration testing with proper authorization.
+
+---
+
+### 🎯 Target Scope
+
+The tool can target **any online server or endpoint** that a PHP server is capable of communicating with, especially those that **lack adequate protection against brute force attacks**.
+
+Even servers with authentication mechanisms or protection layers may still be vulnerable, depending on their configuration.
+
+---
+
+### 🌐 Supported Target Types
+
+#### ✅ Web Servers (HTTP/HTTPS)
+
+Supports brute-forcing or testing endpoints that use:
+
+- HTTP Basic Authentication
+- Digest Authentication
+- NTLM Authentication
+- OAuth 1.0 / OAuth 2.0
+- JSON Web Tokens (JWT)
+- API Token Authentication
+- Password-based login systems
+- Session-based or cookie-based authentication
+
+#### ✅ Databases (via PHP PDO)
+
+The tool can connect to and interact with the following databases, assuming network access is available:
+
+- MySQL
+- PostgreSQL
+- SQLite
+- Microsoft SQL Server / SQL Azure
+- Oracle
+- IBM DB2 / Cloudscape / Apache Derby
+- Firebird
+- Informix
+- 4D
+- Cubrid
+- FreeTDS
+
+#### ✅ Email Protocols
+
+Brute force support for:
+
+- SMTP
+- POP3
+- IMAP
+
+#### ✅ File Transfer Protocols
+
+- FTP / FTPS
+- TFTP
+- SFTP (SSH File Transfer)
+- SCP (Secure Copy)
+
+#### ✅ SSH-based Systems
+
+- SSH brute force for remote systems that support password authentication.
+
+#### ✅ Other Supported Protocols
+
+The tool is capable of initiating brute force or testing connections using the following protocols:
+
+- DICT, FILE, GOPHER, LDAP
+- MQTT (IoT communication)
+- RTMP, RTSP (media streaming)
+- SMB (Windows shares)
+- TELNET
+- TFTP
+- WS (WebSockets)
+- And more...
+
+---
+
+### 🧰 Additional Capabilities
+
+- **Wordlist Generation**: Generate or build custom wordlists (passwords, usernames, numbers, dates, etc.) to aid in testing and fuzzing.
+- **XXS Payload Execution**: The tool can also execute or test reflected/stored **Cross-Site Scripting (XSS)** payloads in web applications, depending on configuration.
+- **Hash Cracking 
+- **Proxy Password Cracker
+
+---
+
+### ⚠️ Disclaimer
+
+> This tool is intended strictly for **legal and ethical use** such as:
+> - Security testing with permission.
+> - Educational or research purposes.
+> - Hardening your own systems.
+>
+> **Unauthorized use against third-party systems is strictly prohibited and may be illegal in your jurisdiction.**

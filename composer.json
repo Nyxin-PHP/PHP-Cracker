@@ -1,0 +1,17 @@
+{
+  "name": "nyxin/php-password-cracker",
+  "description": "Nyxin Projects - PHP Password Brute Force / Cracker",
+  "version": "0.5.0",
+  "type": "script",
+  "license": "AGPL-3.0-or-later",
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "authors": [{
+    "name": "M.A."
+  }],
+  "minimum-stability": "beta",
+  "require": {}
+}

@@ -1,0 +1,55 @@
+
+### 🗂️ Key Configuration Fields
+
+Below is a mapping of available configuration properties and what they control:
+
+| Property       | Type     | Description                                                         |
+| -------------- | -------- | ------------------------------------------------------------------- |
+| `$Characters`  | `string` | Predefined character set group (e.g. `Numbers`, `AlphaLower`, etc.) |
+| `$UniqueChars` | `string` | Custom character set, overrides `$Characters` if set                |
+| `$StartPoint`    | `string` | Starting password or sequence point (used for resume)               |
+| `$MinLen`      | `int`    | Minimum password length                                             |
+| `$MaxLen`      | `int`    | Maximum password length                                             |
+| `$Formation`   | `string` | Output format (`matrix` or `wordslist`)                         |
+| `$ShowPasswords`   | `bool`   | Whether to display cracked attempts live                            |
+| `$Resume`      | `bool`   | Whether to auto-resume from previous state                          |
+| `$Pause`       | `bool`   | Initial pause before starting cracking (e.g. wait for user action)  |
+| `$Delay`       | `int`    | Delay in milliseconds between each attempt                          |
+| `$Target`      | `string` | Name or ID of the target system or scenario                         |
+| `$ignoreAbort` | `bool`   | Ignore `abort` signals or web interruptions                         |
+
+---
+
+### 🧠 Tip:
+
+* If `$UniqueChars` is set, it **overrides** the `$Characters` value.
+* Use `$StartPoint` to resume from a specific password (e.g. `'aa2'`).
+* To slow down brute-force operations and avoid overloads, increase `$Delay`.
+
+---
+
+### 🔤 `$Characters` Options – Predefined Character Groups
+
+You can set `$Characters` to one of the following 15 presets. These define which character sets are used during brute-force generation.
+
+| Value             | Description                                          |
+| ----------------- | ---------------------------------------------------- |
+| `Numbers`         | Digits only (0–9)                                    |
+| `lowercase`      | Lowercase letters (a–z)                              |
+| `uppercase`      | Uppercase letters (A–Z)                              |
+| `Symbols`         | Special characters only (e.g. `!@#$%^&*`)            |
+| `Numbers_lowercase`        | Numbers + lowercase letters                          |
+| `Numbers_uppercase`        | Numbers + uppercase letters                          |
+| `Numbers_Symbols`             | Numbers + letters + special characters  |
+| `lowercase_uppercase`        | Lowercase + uppercase letters                        |
+| `lowercase_Symbols`    | Lowercase letters + special characters               |
+| `uppercase_Symbols`    | Uppercase letters + special characters               |
+| `Numbers_lowercase_uppercase`        | Numbers + lowercase + uppercase letters              |
+| `Numbers_lowercase_Symbols` | Numbers + lowercase letters + special characters     |
+| `Numbers_uppercase_Symbols` | Numbers + uppercase letters + special characters     |
+| `lowercase_uppercase_Symbols` | Lowercase + uppercase letters + special characters   |
+| `Numbers_lowercase_uppercase_Symbols`            | Numbers + lowercase + uppercase + special characters |
+
+> 💡 **Tip:** Use `$UniqueChars` instead if you want full manual control over the character set (e.g. only `abc123!`).
+
+---
