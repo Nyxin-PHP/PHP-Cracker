@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const handleToggle = () => {
         let shouldShow = false;
 
-        // حالة مجموعة الراديو
+
         if (config.radioGroupName) {
           const selectedRadio = document.querySelector(`input[name="${config.radioGroupName}"]:checked`);
           if (selectedRadio && selectedRadio.value === config.triggerValue) {
@@ -24,11 +24,10 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         }
 
-        // إظهار أو إخفاء القسم
         containerElement.style.display = shouldShow ? 'block' : 'none';
         childInputs.forEach(input => input.disabled = !shouldShow);
 
-        // تفعيل أو تعطيل input مخفي لإرسال قيمة
+      
         if (config.updateHiddenField) {
           const hiddenField = document.getElementById(config.updateHiddenField.id);
           if (hiddenField) {
@@ -37,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         }
 
-        // إخفاء أو إظهار قائمة Characters حسب زر الراديو
+      
         if (config.radioGroupName === 'Formation') {
           const charSelect = document.getElementById('Characters');
           if (charSelect) {
@@ -50,9 +49,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       };
 
-      handleToggle(); // الحالة الابتدائية
+      handleToggle(); 
 
-      // مراقبة التغييرات
+  
       if (config.radioGroupName) {
         const radios = document.querySelectorAll(`input[type="radio"][name="${config.radioGroupName}"]`);
         radios.forEach(radio => radio.addEventListener('change', handleToggle));
